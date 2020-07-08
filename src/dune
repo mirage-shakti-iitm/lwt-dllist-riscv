@@ -2,4 +2,6 @@
  (name lwt_dllist)
  (synopsis "Mutable doubly-linked list with Lwt iterators")
  (public_name lwt-dllist)
- (libraries lwt))
+ (libraries lwt)
+ (ocamlopt_flags (-S)))
+ 
