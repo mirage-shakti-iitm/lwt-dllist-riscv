@@ -13,9 +13,10 @@ depends: [
   "lwt-riscv"
 ]
 build: [
- ["dune" "subst" ] {pinned}
- ["dune" "build" "-x" "riscv" "-p" "lwt-dllist" "-j" jobs]
- ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+	[make "add-cap-files"]
+	["dune" "subst" ] {pinned}
+	["dune" "build" "-x" "riscv" "-p" "lwt-dllist" "-j" jobs]
+	["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 dev-repo: "git+https://github.com/mirage/lwt-dllist.git"
 synopsis: "Mutable doubly-linked list with Lwt iterators"
