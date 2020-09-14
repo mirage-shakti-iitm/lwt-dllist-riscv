@@ -8,7 +8,7 @@ doc: "https://mirage.github.io/lwt-dllist/"
 bug-reports: "https://github.com/mirage/lwt-dllist/issues"
 depends: [
   "dune" {build}
-  "ocaml-rscv" {>= "4.07.0"}
+  "ocaml-riscv" {>= "4.07.0"}
   "lwt-riscv"
 ]
 build: [
