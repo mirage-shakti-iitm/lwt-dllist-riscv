@@ -3,5 +3,5 @@
  (synopsis "Mutable doubly-linked list with Lwt iterators")
  (public_name lwt-dllist)
  (libraries lwt)
- (ocamlopt_flags (-S)))
+ (ocamlopt_flags (-S -function-sections)))
  
