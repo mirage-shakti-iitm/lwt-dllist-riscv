@@ -12,7 +12,7 @@ depends: [
   "lwt-riscv"
 ]
 build: [
-	[make "add-cap-files"]
+	(* [make "add-cap-files"] *)
 	["dune" "subst" ] {pinned}
 	["dune" "build" "-x" "riscv" "-p" "lwt-dllist" "-j" jobs]
 	["dune" "runtest" "-p" name "-j" jobs] {with-test}
